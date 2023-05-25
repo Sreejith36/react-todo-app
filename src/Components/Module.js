@@ -26,24 +26,26 @@ export default class Module extends Component {
         console.log(items)
         return (
             <div>
-                <h1>Todo List</h1>
-                <form onSubmit={this.storeItem}>
-                    <input type='text' onChange={this.handler}
-                        value={input}
-                        placeholder='Enter Items' ></input>
-                    <button>Add</button>
-                </form>
-                <div>
+                <div className='list-input'>
+
+                    <h1>Todo List</h1>
+                    <form onSubmit={this.storeItem}>
+                        <input type='text' onChange={this.handler}
+                            value={input}
+                            placeholder='Enter Items' ></input>
+                        <button>Add</button>
+                    </form>
+                </div>
+                <div className='list-output'>
                     {items.map(
 
                         (data, index) => {
-                            return(
+                            return (
 
                                 <p key={index}>{data}</p>
                             )
                         })}
 
-                    <p>Item 1</p>
                 </div>
 
             </div>

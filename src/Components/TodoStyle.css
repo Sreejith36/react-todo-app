@@ -1,7 +1,50 @@
-h1 {
-    color: red;
+body {
+    background-color: lightsalmon;
 }
 
 .App {
     text-align: center;
+}
+
+.list-input {
+    width: 40%;
+    height: 140px;
+    margin: 10px auto;
+    background-color: #005ce6;
+    color: white;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px #4d4d4d;
+}
+
+.list-input input {
+    font-size: 14px;
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+.list-input button {
+    font-size: 14px;
+    width: 80px;
+    background-color: #33ff33;
+    border: none;
+    padding: 5px 10px ;
+    border-radius: 8px;
+}
+
+.list-output {
+    text-align: left;
+    width: 40%;
+    height: 80px;
+    margin: 1px auto;
+}
+.list-output p {
+    margin: 8px 0;
+    border-radius: 10px;
+    background-color: #005ce6;
+    color: white;
+    padding: 20px 15px;
+    font-size: 22px;
+    font-weight: 800;
+    box-shadow: 3px 3px 8px #4d4d4d;
 }
