@@ -17,20 +17,47 @@ body {
     box-shadow: 3px 3px 8px #4d4d4d;
 }
 
+.text-input{
+    background-color: white;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 8px;
+    
+    }
+
 .list-input input {
     font-size: 14px;
-    padding: 5px 10px;
+    padding: 10px 10px;
     border-radius: 8px;
+    border: none;
+    width: 70%;
 }
+
+.list-input input:focus{
+    outline: none;
+}
+
 
 .list-input button {
     font-size: 14px;
     width: 80px;
+    cursor: pointer;
     background-color: #33ff33;
     border: none;
     padding: 5px 10px ;
     border-radius: 8px;
 }
+
+.list-input button:hover{
+    background-color: #00cc00;
+}
+
+.list-input button:active {
+    background-color: #3e8e41;
+    transform: translateX(3px);
+  }
 
 .list-output {
     text-align: left;
@@ -47,4 +74,11 @@ body {
     font-size: 22px;
     font-weight: 800;
     box-shadow: 3px 3px 8px #4d4d4d;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+i {
+    cursor: pointer;
 }
